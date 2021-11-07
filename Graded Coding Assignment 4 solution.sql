@@ -77,7 +77,6 @@ values
 ('Manish', 'Non-AC', 'M', 'Hyderabad', 'Bengaluru', 500, 'Sitting'),
 ('Piyush', 'AC','M', 'Pune', 'Nagpur', 700, 'Sitting');
 
-select * from passenger;
 
 /*
 Bus_Type Distance Price
@@ -111,7 +110,6 @@ values
 ('Sitting', 1000, 1240),
 ('Sitting', 1200, 1488),
 ('Sitting', 1500, 1860);
-select * from price;
 
 /* 3) How many females and how many male passengers travelled for a minimum distance of 600 KM s?*/
 select Gender,count(Gender) from passenger where distance >=600 group by Gender;
